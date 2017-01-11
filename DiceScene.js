@@ -27,7 +27,7 @@ export default class DiceScene extends Component {
     if (this.state.rolling) {
       this.setState({
         rolling: false,
-        roll: Math.ceil(6*Math.random()),
+        roll: Math.floor(6*Math.random()) + 1,
       });
     }
   }
